@@ -1,4 +1,5 @@
 #include<iostream>
+#include<vector>
 using namespace std;
 void swapping(int &a, int &b) {      //swap the content of a and b
    int temp;
@@ -28,7 +29,7 @@ int main() {
    int n;
    cout << "Enter the number of elements: ";
    cin >> n;
-   int arr[n];     //create an array with given number of elements
+   vector<int> arr(n)   //create a vector array with given number of elements to add more functionality to array operations
    cout << "Enter elements:" << endl;
    for(int i = 0; i<n; i++) {
       cin >> arr[i];
