@@ -13,7 +13,7 @@ int main()
     int b = size-1;
 
     while (a <= b) {
-        int k = (a+b)/2;
+        int k = a+(b-a)/2;//to avoid integer overflow
         if (array[k] == x) {
             cout << "Found at index: " << k;
         }
